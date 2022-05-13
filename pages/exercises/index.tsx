@@ -15,7 +15,7 @@ export async function getServerSideProps(constext: GetServerSidePropsContext) {
 export default function ExercisePage(props:{lightWeightExercises:ExerciseLight[]}){
     
    const {lightWeightExercises} = props;
-   const ExerciseList:any = () => lightWeightExercises.map((ex => <li key={ex.id}> {ex.description} {ex.createdAt}</li>))
+   const ExerciseList:any = () => lightWeightExercises.map((ex => <li key={ex.id}> {ex.description} {ex.id}</li>))
 
     return(<>
     <h1>Exercise page</h1>
